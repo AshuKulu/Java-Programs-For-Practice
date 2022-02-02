@@ -2,6 +2,7 @@ package com.ashukulu.javacwh;
 
 public class whileLoop {
     public static void main(String[] args) {
+        //sum of first n natural numbers
         int n=7;
         int sum = 0;
         int i=1;
