@@ -6,6 +6,7 @@ public class Pallindrome {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //for integer input
+        System.out.println("Enter a number to check palindrome: ");
         int ip = sc.nextInt();
         int x=ip;
         int y=0;
@@ -15,23 +16,24 @@ public class Pallindrome {
             x=x/10;
         }
         if (ip==y){
-            System.out.println("Pallindrome Found");
+            System.out.println("Palindrome Found");
         } else {
-            System.out.println("Not a Pallindrome");
+            System.out.println("Not a Palindrome");
         }
 
         //for string input
+        System.out.println("Enter a String to check palindrome: ");
         String input= sc.next();
-        String reverse="";
+        StringBuilder reverse= new StringBuilder();
         for(int i=(input.length())-1; i>=0; i--){
-            reverse = reverse+input.charAt(i);
+            reverse.append(input.charAt(i));
         }
         System.out.println(input);
         System.out.println(reverse);
-        if(reverse.equals(input)){
-            System.out.println("Pallindrome Found");
+        if(reverse.toString().equals(input)){
+            System.out.println("Palindrome Found");
         } else {
-            System.out.println("Not a Pallindrome");
+            System.out.println("Not a Palindrome");
         }
     }
 }
