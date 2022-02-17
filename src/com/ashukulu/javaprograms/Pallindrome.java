@@ -22,7 +22,7 @@ public class Pallindrome {
 
         //for string input
         String input= sc.next();
-        String reverse;
+        String reverse="";
         for(int i=(input.length())-1; i>=0; i--){
             reverse = reverse+input.charAt(i);
         }
