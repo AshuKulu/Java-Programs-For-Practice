@@ -12,7 +12,7 @@ public class factorial {
 
     public static void main(String[] args) {
         int fac=0;
-        int n=2;
+        int n=8;
         for(int i=0; i<=n; i++){
             if(i==0){
                 fac=1;
