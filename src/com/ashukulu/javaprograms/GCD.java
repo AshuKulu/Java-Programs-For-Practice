@@ -7,8 +7,10 @@ public class GCD {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter value for first number: ");
         int n1= sc.nextInt();
+        n1 = ( n1 > 0) ? n1 : -n1;
         System.out.println("Enter value for second number: ");
         int n2= sc.nextInt();
+        n2 = ( n2 > 0) ? n2 : -n2;
 
         //1st method
         int gcd=0;
