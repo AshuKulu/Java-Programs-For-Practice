@@ -22,6 +22,7 @@ public class GCD {
         System.out.println("GCD or HCF of "+n1+" and "+n2+" is "+gcd);
 
         //2nd method
+        //Using while loop
         System.out.print("GCD or HCF of "+n1+" and "+n2+" is ");
         while(n1 != n2){
             if(n1>n2){
